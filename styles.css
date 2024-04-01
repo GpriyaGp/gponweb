@@ -31,6 +31,7 @@ body {
         opacity: 0;
         transform: translateY(20px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -58,17 +59,18 @@ p {
     animation: fadeInUp 1s ease-out forwards 0.5s;
 }
 
-.social-icons a {
-    margin: 0 0.5rem;
-    color: #fff;
-    font-size: 2rem;
-    transition: color 0.3s, background-color 0.3s;
-    border-radius: 50%; /* Rounded corners */
-    padding: 0.5rem; /* Add some padding */
-}
+    .social-icons a {
+        margin: 0 0.5rem;
+        color: white;
+        font-size: 2rem;
+        transition: transform 0.3s ease-in-out;
+        border-radius: 50%; /* Rounded corners */
+        padding: 0.5rem; /* Add some padding */
+    }
 
-.social-icons a:hover {
-    color: #fff; /* White text color on hover */
-    background-color: #f39c12; /* Orange background color on hover */
-    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff; /* White glow effect on hover */
-}
+        .social-icons a:hover {
+            color: #fff; /* White text color on hover */
+            /*background-color: rgba(0, 0, 0, 0.5);*/ /* Orange background color on hover */
+            box-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff; /* White glow effect on hover */
+            transform: translateY(-3px);
+        }
